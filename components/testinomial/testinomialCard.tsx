@@ -1,8 +1,13 @@
 // components/TestimonialCard.jsx
 import Image from "next/image";
 import { FaStar } from "react-icons/fa";
-
-const TestimonialCard = ({ name, image, text, rating }) => {
+type TestimonialProps = {
+  name: string;
+  image: string;
+  text: string;
+  rating: number;
+};
+const TestimonialCard = ({ name, image, text, rating }: TestimonialProps) => {
   return (
     <div className="border border-yellow-300 rounded-xl p-6 shadow-sm hover:shadow-md transitio bg-gradient-to-r from-[#FAF7EB] to-[#FAEFEB]">
       <p className="text-gray-700 mb-4"> &ldquo;{text} &ldquo;</p>
