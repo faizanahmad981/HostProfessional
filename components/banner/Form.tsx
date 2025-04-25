@@ -35,7 +35,7 @@ const MyForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="my-5 mx-auto p-6">
+    <form onSubmit={handleSubmit(onSubmit)} className="my-5 mx-auto ">
       <div className="mb-4 flex flex-row gap-2">
         <InputField
           label="Name:"
