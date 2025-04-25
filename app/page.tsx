@@ -404,7 +404,7 @@ export default function Home() {
           </button>
           
 
-          <div className="flex flex-col md:flex-row items-center space-x-2 text-base font-normal">
+          <div className="flex flex-col md:flex-row items-center space-x-2 text-base font-normal py-4">
             <StarRating />
             <span>Die #1 bei 40.000+ Unternehmen</span>
           </div>
