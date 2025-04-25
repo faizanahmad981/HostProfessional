@@ -29,6 +29,8 @@ import ohneIT3 from './company-icon/ohne-IT3.svg';
 import ohneIT4 from './company-icon/ohne-IT4.svg';
 import cloud from './company-icon/cloud.svg';
 import tele from './company-icon/tele.svg';
+import womenImg from './company-icon/women.svg'
+import footerLogo from './footerLogo.svg'
 export {loginImage,Profile,account,dollar,notebook,tick,avator,lock,brand,brand1,brand2,brand3,brand4,
-    img,img1,img2,img3,img4,img5,img6,img7,img8,ohnyit ,avator1,avator2,ohneIT1, ohneIT2,ohneIT3,ohneIT4,cloud,tele
+    img,img1,img2,img3,img4,img5,img6,img7,img8,ohnyit ,avator1,avator2,ohneIT1, ohneIT2,ohneIT3,ohneIT4,cloud,tele,womenImg,footerLogo
 };

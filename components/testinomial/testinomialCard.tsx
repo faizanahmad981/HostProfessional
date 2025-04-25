@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 const TestimonialCard = ({ name, image, text, rating }) => {
   return (
     <div className="border border-yellow-300 rounded-xl p-6 shadow-sm hover:shadow-md transitio bg-gradient-to-r from-[#FAF7EB] to-[#FAEFEB]">
-      <p className="text-gray-700 mb-4">"{text}"</p>
+      <p className="text-gray-700 mb-4"> &ldquo;{text} &ldquo;</p>
       <div className="flex items-center gap-4">
         <Image
           src={image}

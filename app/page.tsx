@@ -13,13 +13,16 @@ import {
   ohneIT2,
   ohneIT3,
   ohneIT4,
-  ohnyit,
+ 
   tele,
   tick,
+  womenImg,
 } from "@/assets/images";
 import BannerSection from "@/components/banner";
 import StarRating from "@/components/banner/startRating";
 import CircleNetwork from "@/components/circleNetwork";
+import FAQSection from "@/components/faq/fawSection";
+import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import { testimonials } from "@/components/testinomial/testinomial";
 import TestimonialCard from "@/components/testinomial/testinomialCard";
@@ -487,6 +490,75 @@ export default function Home() {
         <TestimonialCard key={index} {...item} />
       ))}
     </div>
+    <div className="bg-[red]">
+    <FAQSection />
+    </div>
+
+    <div className="flex flex-col md:flex-row justify-between items-center gap-10 px-6 md:px-8 lg:px-20 py-12">
+    <div className="">
+
+    <h1 className="text-3xl md:text-4xl font-bold mb-4">
+    Starten Sie jetzt mit moderner <br /> 
+    Cloud-Telefonie
+          </h1>
+          <p className="text-lg mb-6">
+          Vereinbaren Sie ein kurzes Gespräch mit unserem Team und erleben Sie,  wie
+        viel einfacher Geschäftstelefonie sein kann.{" "}
+          </p>
+
+          <div className="space-y-3">
+            <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+             
+              <span className="ml-2">
+               {" "}
+                <span className="font-bold">Sparen Sie bis zu 60% </span>
+                Ihrer Kosten
+              </span>
+            </div>
+
+            <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+                Keine{" "}Tätigen Sie Geschäftsanrufe 
+                <span className="font-bold">von jedem Gerät, überall</span>
+              </span>
+            </div>
+
+            <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+              Professionelle Anrufverwaltung mit {" "}
+                <span className="font-bold">lokalem Support aus Österreich</span>
+              </span>
+            </div>
+            <div className="flex flex-col   text-2xl font-bold space-y-4">
+          <button
+            type="submit"
+            className="bg-gradient-to-r from-[#AB8900] to-[#FAC800] hover:from-[#FAC800] hover:to-[#AB8900]
+             text-black font-bold py-3 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          >
+            Jetzt Kostenlos Beraten Lassen
+          </button>
+
+          <div className="flex flex-col md:flex-row  space-x-2 text-base font-normal">
+            <StarRating />
+            <span>Über 40.000 zufriedene Kunden</span>
+          </div>
+        </div>
+          </div>
+    
+    </div>
+    <div className="flex">
+    <Image src={womenImg} alt="tick" className="w-[792px] h-[458px]" />
+    </div>
+    
+    </div>
+
+    <Footer />
+
+   
+
     </div>
   );
 }

@@ -33,11 +33,12 @@ const BannerSection = () => {
         </div>
 
         <div className="rounded-lg bg-[#FEFDFB] w-[333px] border border-[#FAC800] md:w-[573px] px-2 py-2">
-          <p>
-            "Unsere ISDN-Leitung wurde mit nur 6 Wochen Frist gekündigt.<br/>
-            Hostprofis hat unser neues System in nur 14 Tagen eingerichtet und<br/>
-            wir konnten alle Nummern behalten. Keine Ausfallzeit, kein Stress."<br/>
-          </p>
+        <p>
+  &ldquo;Unsere ISDN-Leitung wurde mit nur 6 Wochen Frist gekündigt.<br/>
+  Hostprofis hat unser neues System in nur 14 Tagen eingerichtet und<br/>
+  wir konnten alle Nummern behalten. Keine Ausfallzeit, kein Stress.&rdquo;<br/>
+</p>
+
           <div className="flex flex-row items-center mt-2">
             <Image src={avator} alt="tick" />
             <div className="flex flex-col mx-2">

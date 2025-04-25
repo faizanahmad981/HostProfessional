@@ -13,7 +13,7 @@ import {
     ohneIT2,
     ohneIT3,
     ohneIT4,
-    ohnyit,
+  
     tele,
     tick,
   } from "@/assets/images";
