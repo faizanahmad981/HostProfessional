@@ -20,10 +20,12 @@ import {
 } from "@/assets/images";
 import BannerSection from "@/components/banner";
 import StarRating from "@/components/banner/startRating";
+import Button from "@/components/button";
 import CircleNetwork from "@/components/circleNetwork";
 import FAQSection from "@/components/faq/fawSection";
 import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
+import PricingCard from "@/components/pricingCard";
 import { testimonials } from "@/components/testinomial/testinomial";
 import TestimonialCard from "@/components/testinomial/testinomialCard";
 import TopBar from "@/components/topBar";
@@ -39,59 +41,75 @@ export default function Home() {
       </div>
 
       <div className="bg-gradient-to-r from-[#FAF7EB] to-[#FAEFEB]   flex flex-col  justify-between px-6 md:px-8 lg:px-15 ">
-        <h1 className="flex justify-center items-center text-2xl font-bold">
+        <h1 className="flex justify-center items-center text-xl font-bold mt-12">
           Die #1 bei 40.000+ Unternehmen
         </h1>
-        <div className="flex flex-wrap md:flex-row my-2">
-          <Image src={img} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img1} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img2} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img3} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img4} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img5} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img6} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img7} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
-          <Image src={img8} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/6" />
+        <div className="flex flex-wrap md:flex-row my-2 py-12">
+          <Image src={img} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img1} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img2} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img3} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img4} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img5} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img6} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img7} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
+          <Image src={img8} alt="brand1" className="w-1/2 md:w-1/4 lg:w-1/9" />
         </div>
       </div>
 
-      <div className=" flex flex-col md:flex-row jus gap-12 px-6 md:px-8 lg:px-15">
+      <div className="  px-6 md:px-8 lg:px-15 my-20 ">
+        <h1 className="flex justify-center items-center text-4xl font-bold mt-12">
+        Ihre komplette Cloud Telefonanlage schon ab €14,90 pro Nutzer
+        </h1>
+
+        <h1 className="flex justify-center items-center text-xl  mt-12">
+        Sie erhalten alle Premium-Funktionen einer Enterprise-Telefonanlage, kombiniert mit maximaler 
+        Benutzerfreundlichkeit und das zu einem Bruchteil der Kosten. Wir kümmern uns um den perfekten Start und 
+         den reibungslosen Betrieb – Sie genießen modernste Kommunikationstechnik ohne komplizierte Installation.
+        </h1>
+       
+      </div>
+
+      <div className=" flex flex-col md:flex-row  gap-12 px-6 md:px-8 lg:px-15 ">
         <CircleNetwork />
         <div className="leading-9">
           <h1 className="text-4xl font-bold leading-9">
             Sie sind von der ISDN <br />
             Abschaltung betroffen?
           </h1>
-          <p className="text-lg font-normal">
-            Wechseln Sie in nur 14 Tagen zu moderner Cloud-Telefonie – ohne
-            <br /> hohe Kosten, ohne Stress und ohne Unterbrechungen.
+          <p className="text-lg font-normal py-4">
+          Wir übernehmen den gesamten Umstieg von der alten <br/>
+          Telefonanlage in die Cloud für Sie.<span className="font-bold">Schnell, einfach und <br/>
+          kostenlos.</span> 
           </p>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
-            <span className="mx-1">
-              {" "}
-              Ihre Telefonnummern{" "}
-              <span className="font-bold"> bleiben erhalten</span>{" "}
+          <div className="flex items-start">
+            <Image src={tick} alt="tick" className="mt-1" />
+            <span className="mx-1 ">
+             
+              Ihr System ist in nur 14   {" "}
+              <span className="font-bold"> Tagen einsatzbereit</span>{" "}
+              – professionell eingerichtet und perfekt konfiguriert.
             </span>
           </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
+          
+          <div className="flex items-start">
+            <Image src={tick} alt="tick" className="mt-1" />
 
             <span className="mx-1">
-              {" "}
-              Keine{" "}
-              <span className="font-bold"> teuren Anschaffungskosten</span>{" "}
+             
+            Sie bleiben während dem Umstieg für Ihre Kunden   {" "}
+              <span className="font-bold"> 100%  <br/>ohne Unterbrechung erreichbar. </span>{" "}
+             
             </span>
           </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
-
-            <span className="mx-1">
-              {" "}
-              Betreuung durch unser{" "}
-              <span className="font-bold"> österreichisches Team</span>{" "}
-            </span>
-          </div>
+         
+          <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <p className="ml-2">
+              Wir kümmern uns um die komplette Nummernübertragung,<br/> damit   {" "}
+              <span className="font-bold"> Ihre alten Nummern nahtlos weiter funktionieren.</span>{" "}
+              </p>
+            </div>
         </div>
       </div>
 
@@ -169,37 +187,39 @@ export default function Home() {
             Über 150 Premium Funktionen für <br />
             Ihre Business-Telefonie
           </h1>
-          <p className="text-lg font-normal">
+          <p className="text-lg font-normal py-4">
             Mit unserer Cloud-Telefonanlage erhalten Sie alle
             <br />
             Funktionen einer Enterprise-Telefonanlage – nur einfacher
             <br />
             zu bedienen und zu einem Bruchteil der Kosten.
           </p>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
-            <span className="mx-1">
-              {" "}
-              Ihre Telefonnummern{" "}
-              <span className="font-bold"> bleiben erhalten</span>{" "}
-            </span>
-          </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
+          <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+              Eine smarte  {" "}
+                <span className="font-bold">
+                digitale Rezeption
+                </span>{" "}
+                leitet Ihre Anrufer sofort <br/> zum richtigen Ansprechpartner weiter.
+              </span>
+            </div>
+            <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+              Unser  {" "}
+                <span className="font-bold">intelligentes Warteschleifensystem</span>{" "}mit {" "}<br/>
+                <span className="font-bold">Rückrufoptionen  </span>{" "}sorgt für{" "}
+                <span className="font-bold">zufriedene Kunden.</span>{" "}
+              </span>
+            </div>
+          <div className="flex items-start">
+            <Image src={tick} alt="tick" className="mt-1" />
 
             <span className="mx-1">
               {" "}
-              Keine{" "}
-              <span className="font-bold"> teuren Anschaffungskosten</span>{" "}
-            </span>
-          </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
-
-            <span className="mx-1">
-              {" "}
-              Betreuung durch unser{" "}
-              <span className="font-bold"> österreichisches Team</span>{" "}
+              Nahtlose Anrufweiterleitung auf mobile Geräte, Call<br/> Recording, Konferenzschaltungen,{" "}
+              <span className="font-bold">  und vieles mehr.</span>{" "}
             </span>
           </div>
         </div>
@@ -221,24 +241,27 @@ export default function Home() {
             <div className="flex items-start">
               <Image src={tick} alt="tick" className="mt-1" />
               <span className="ml-2">
-                Ihre Telefonnummern{" "}
-                <span className="font-bold">bleiben erhalten</span>
+              Nutzen Sie Ihre geschäftliche Rufnummer auf allen Geräten: {" "}<br/>
+                <span className="font-bold">Tischtelefon, Smartphone oder Computer.</span>
               </span>
             </div>
 
             <div className="flex items-start">
               <Image src={tick} alt="tick" className="mt-1" />
               <span className="ml-2">
-                Keine{" "}
-                <span className="font-bold">teuren Anschaffungskosten</span>
+              Wechseln Sie nahtlos zwischen  {" "}
+                <span className="font-bold">verschiedenen<br/> Arbeitsorten.</span>
+                Ihre Erreichbarkeit bleibt konstant.
               </span>
             </div>
 
             <div className="flex items-start">
               <Image src={tick} alt="tick" className="mt-1" />
               <span className="ml-2">
-                Betreuung durch unser{" "}
-                <span className="font-bold">österreichisches Team</span>
+              Ermöglichen Sie Ihrem Team  {" "}
+                <span className="font-bold">maximale Bewegungsfreiheit</span><br/>
+                bei gleichbleibend 
+                <span className="font-bold">professionellem Auftreten.</span>
               </span>
             </div>
           </div>
@@ -271,41 +294,41 @@ export default function Home() {
             all Ihren Tools und Geschäftsprozessen:
             <br />
           </p>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
-            <span className="mx-1">
-              {" "}
-              Ihre Telefonnummern{" "}
-              <span className="font-bold"> bleiben erhalten</span>{" "}
-            </span>
-          </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
+          <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+              Steigern Sie Ihre Servicequalität durch   {" "}
+                <span className="font-bold"> sofortigen Zugriff <br/> auf Kundeninformationen bei eingehenden Anrufen.</span><br/>
+               
+               
+              </span>
+            </div>
 
-            <span className="mx-1">
-              {" "}
-              Keine{" "}
-              <span className="font-bold"> teuren Anschaffungskosten</span>{" "}
-            </span>
-          </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
-
-            <span className="mx-1">
-              {" "}
-              Betreuung durch unser{" "}
-              <span className="font-bold"> österreichisches Team</span>{" "}
-            </span>
-          </div>
+            <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+              Dokumentieren Sie jede Kundeninteraktion <br/>    {" "}
+                <span className="font-bold">automatisch</span> {" "}
+                in Ihrem CRM-System. 
+              </span>
+            </div>
+            <div className="flex items-start">
+              <Image src={tick} alt="tick" className="mt-1" />
+              <span className="ml-2">
+              Optimieren Sie Ihre Workflows durch direkte   {" "}
+                <span className="font-bold"> Verknüpfung<br/> von Telefonaten mit digitalen Kundenakten.</span> {" "}
+             
+              </span>
+            </div>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#FAF7EB] to-[#FAEFEB] px-6 md:px-8 lg:px-15">
-        <h1 className="flex justify-center items-center text-2xl font-bold">
+      <div className="bg-gradient-to-r from-[#FAF7EB] to-[#FAEFEB] px-6 md:px-8 lg:px-15 my-6">
+        <h1 className="flex justify-center items-center text-2xl font-bold pt-16">
           60% weniger Kosten bei 100x mehr Leistung
         </h1>
-        <div className="flex justify-center items-center flex-col">
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
+        <div className="flex justify-center items-center flex-col pt-6">
+          <div className="flex items-start">
+            <Image src={tick} alt="tick" className="mt-1" />
             <span className="mx-1">
               {" "}
               Genießen Sie volle Planungssicherheit durch eine{" "}
@@ -313,8 +336,8 @@ export default function Home() {
               Überraschungen.
             </span>
           </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
+          <div className="flex items-start">
+            <Image src={tick} alt="tick" className="mt-1"  />
             <span className="mx-1">
               {" "}
               Bis zu <span className="font-bold">
@@ -324,8 +347,8 @@ export default function Home() {
               Funktionsumfang.
             </span>
           </div>
-          <div className="flex flex-row  leading-9">
-            <Image src={tick} alt="tick" />
+          <div className="flex items-start">
+            <Image src={tick} alt="tick" className="mt-1"  />
             <span className="mx-1">
               {" "}
               <span className="font-bold">
@@ -337,145 +360,49 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 gap-6 my-10 md:grid-cols-2">
-          {/* Cloud Telefonie Pakete */}
-          <div className="rounded-xl w-[300px] md:w-[500px] border border-yellow-300 p-6 shadow-sm">
-            <div className="flex flex-row">
-              <Image src={cloud} alt="tick" className="" />
-              <h2 className="text-2xl font-semibold text-yellow-500  flex items-center gap-2">
-                Cloud Telefonie Pakete
-              </h2>
-            </div>
+      <PricingCard
+        title="Cloud Telefonie Pakete"
+        icon={cloud}
+        features={[
+          "Behalten Sie Ihre Nummern",
+          "Kostenlose Einrichtung",
+          "Nutzbar auf jedem Gerät",
+          "Hosting in Österreich",
+          "150+ Funktionen inklusive",
+          "Jederzeit kündbar",
+        ]}
+        prices={[
+          { price: "€14,90", unit: "/ Monat", note: "pro Nutzer" },
+          { price: "€58,90", unit: "/ Monat", note: "für unbegrenzte Nutzer" },
+        ]}
+      />
 
-            <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-700 mb-4">
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">
-                  Behalten Sie Ihre Nummern
-                </span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Kostenlose Einrichtung</span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Nutzbar auf jedem Gerät</span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Hosting in Österreich</span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">
-                  150+ Funktionen inklusive
-                </span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Jederzeit kündbar</span>
-              </li>
-            </ul>
-
-            <div className="border-t border-gray-200 pt-4 text-sm">
-              <div className="flex flex-col md:flex-row justify-between gap-4">
-                <div>
-                  <p className="text-gray-500">Schon ab</p>
-                  <p>
-                    <span className="text-lg font-bold text-[#6b5402]">
-                      €14,90
-                    </span>
-                    <span className="text-gray-900"> / Monat</span>
-                  </p>
-                  <p className="text-gray-500">pro Nutzer</p>
-                </div>
-
-                <div>
-                  <p className="text-gray-500">Schon ab</p>
-                  <p>
-                    <span className="text-lg font-bold text-[#6b5402]">
-                      €58,90
-                    </span>
-                    <span className="text-gray-900"> / Monat</span>
-                  </p>
-                  <p className="text-gray-500">für unbegrenzte Nutzer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Telefon Tarife */}
-          <div className="rounded-xl w-[300px] md:w-[500px] border border-yellow-300 p-6 shadow-sm">
-            <div className="flex flex-row">
-              <Image src={tele} alt="tick" className="" />
-              <h2 className="text-2xl font-semibold text-yellow-500  flex items-center gap-2">
-                Telefon Tarife
-              </h2>
-            </div>
-            <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-gray-700 mb-4">
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">
-                  Behalten Sie Ihre Nummern
-                </span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Kostenlose Einrichtung</span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Nutzbar auf jedem Gerät</span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Hosting in Österreich</span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">
-                  150+ Funktionen inklusive
-                </span>
-              </li>
-              <li className="w-full sm:w-[calc(50%-0.75rem)] flex flex-row items-start leading-6">
-                <Image src={tick} alt="tick" className="mt-1" />
-                <span className="ml-2 font-bold">Jederzeit kündbar</span>
-              </li>
-            </ul>
-            <div className="border-t border-gray-200 pt-4 text-sm">
-              <div className="flex flex-col md:flex-row justify-between gap-4">
-                <div>
-                  <p className="text-gray-500">Schon ab</p>
-                  <p>
-                    <span className="text-lg font-bold text-[#6b5402]">
-                      €14,90
-                    </span>
-                    <span className="text-gray-900"> / Monat</span>
-                  </p>
-                  <p className="text-gray-500">pro Nutzer</p>
-                </div>
-
-                <div>
-                  <p className="text-gray-500">Schon ab</p>
-                  <p>
-                    <span className="text-lg font-bold text-[#6b5402]">
-                      €58,90
-                    </span>
-                    <span className="text-gray-900"> / Monat</span>
-                  </p>
-                  <p className="text-gray-500">für unbegrenzte Nutzer</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <PricingCard
+        title="Telefon Tarife"
+        icon={tele}
+        features={[
+          "Festnetz & Mobil in AT",
+          "Einfache Anrufverwaltung",
+          "Festnetz & Mobil in EU",
+          "Transparente Preise",
+          "Unbegrenzte Nutzer",
+          "Jederzeit kündbar",
+        ]}
+        prices={[
+          { price: "4,9 Cent", unit: "/ Minute", note: "pro Nutzer" },
+          { price: "€14,90", unit: "/ Monat", note: "für unbegrenzte Nutzer" },
+        ]}
+      />
+    </div>
         <div className="flex flex-col items-center justify-center text-center text-2xl font-bold space-y-4">
           <button
             type="submit"
-            className="bg-gradient-to-r from-[#AB8900] to-[#FAC800] hover:from-[#FAC800] hover:to-[#AB8900] text-black font-bold py-3 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-300"
+            className="bg-gradient-to-r from-[#AB8900] to-[#FAC800] hover:from-[#FAC800] hover:to-[#AB8900]
+             text-black font-bold py-3 px-6 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-yellow-300"
           >
             Jetzt Kostenlos Beraten Lassen
           </button>
+          
 
           <div className="flex flex-col md:flex-row items-center space-x-2 text-base font-normal">
             <StarRating />

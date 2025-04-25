@@ -12,7 +12,7 @@ const StarRating = () => {
         return (
           <FaStar
             key={index}
-            className={`cursor-pointer ${ratingValue <= rating ? 'text-yellow-500' : 'text-yellow-500'} text-2xl`}
+            className={`cursor-pointer ${ratingValue <= rating ? 'text-yellow-500' : 'text-yellow-500'} text-xl`}
             onClick={() => setRating(ratingValue)}
             onMouseOver={() => setRating(ratingValue)}
             onMouseLeave={() => setRating(rating)}
