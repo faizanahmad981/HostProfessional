@@ -1,12 +1,12 @@
 // components/PricingCard.tsx
-
+import { StaticImageData } from "next/image";
 import { tick } from "@/assets/images";
 import Image from "next/image";
 import React from "react";
 
 interface PricingCardProps {
   title: string;
-  icon: any;
+  icon: StaticImageData; 
   features: string[];
   prices: {
     price: string;

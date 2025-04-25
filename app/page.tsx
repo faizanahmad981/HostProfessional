@@ -20,7 +20,7 @@ import {
 } from "@/assets/images";
 import BannerSection from "@/components/banner";
 import StarRating from "@/components/banner/startRating";
-import Button from "@/components/button";
+
 import CircleNetwork from "@/components/circleNetwork";
 import FAQSection from "@/components/faq/fawSection";
 import Footer from "@/components/footer";
