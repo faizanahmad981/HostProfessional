@@ -17,7 +17,7 @@ interface PricingCardProps {
 
 const PricingCard: React.FC<PricingCardProps> = ({ title, icon, features, prices }) => {
   return (
-    <div className="rounded-xl w-[300px] md:w-[500px] border border-yellow-300 p-6 shadow-sm">
+    <div className="rounded-xl w-full md:w-[500px] lg:w-full border border-yellow-300 p-6 shadow-sm">
       <div className="flex flex-row items-center gap-2 mb-4">
         <Image src={icon} alt="icon" />
         <h2 className="text-2xl font-semibold text-yellow-500">{title}</h2>

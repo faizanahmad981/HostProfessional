@@ -13,7 +13,7 @@ import {
 import MyForm from "./Form";
 const BannerSection = () => {
   return (
-    <div className="grid grid-cols-1  gap-4  my-10   md:grid-cols-2 lg:gridcols-2">
+    <div className="grid grid-cols-1  gap-4  my-10   md:grid-cols-1 lg:grid-cols-2 sm:grid-cols-1">
       <div className="">
         <div className="flex flex-row font-normal text-sm gap-4 ">
           <StarRating /> Die #1 bei 40.000+ Unternehmen

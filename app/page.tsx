@@ -70,7 +70,8 @@ export default function Home() {
        
       </div>
 
-      <div className=" flex flex-col md:flex-row  gap-12 px-6 md:px-8 lg:px-15 ">
+      <div className=" flex flex-col   lg:flex-row  gap-12 px-6 md:px-8 lg:px-15 ">
+       
         <CircleNetwork />
         <div className="leading-9">
           <h1 className="text-4xl font-bold leading-9">
@@ -359,7 +360,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 my-10 md:grid-cols-2">
+        <div className="grid grid-cols-1  gap-6 my-10  lg:grid-cols-2 w-full  lg:w-2/3 ">
       <PricingCard
         title="Cloud Telefonie Pakete"
         icon={cloud}
